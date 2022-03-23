@@ -6,3 +6,4 @@ switch($op){
     case 's': echo "Salvar"; break;
     default: echo "Sair"; break;
 }
+?>
