@@ -1,11 +1,11 @@
 <?php
 $palavra = "Pedro";
 
-$nova_pal = str_replace('a', 'X',$palavra);
-$nova_pal = str_replace('e', 'X',$nova_pal);
-$nova_pal = str_replace('i', 'X',$nova_pal);
-$nova_pal = str_replace('o', 'X',$nova_pal);
-$nova_pal = str_replace('u', 'X',$nova_pal);
+$nova_pal = str_replace('a', 'x',$palavra);
+$nova_pal = str_replace('e', 'x',$nova_pal);
+$nova_pal = str_replace('i', 'x',$nova_pal);
+$nova_pal = str_replace('o', 'x',$nova_pal);
+$nova_pal = str_replace('u', 'x',$nova_pal);
 
 $nova_pal = str_replace('A', 'X',$nova_pal);
 $nova_pal = str_replace('E', 'X',$nova_pal);
