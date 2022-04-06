@@ -11,4 +11,5 @@ function hide_cep_no($numero)
 $cep = 16203180;
 echo hide_cep_no($cep);
 
+
 ?>
