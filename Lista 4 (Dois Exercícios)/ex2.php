@@ -15,7 +15,7 @@
     $optChk = $_POST['chkBox'];
     $optChk2 = $_POST['chkBox2'];
     $optOpt = $_POST['optBox'];
-    $selCione = $_POST['selCionar'];
+    $selCione = $_POST['selCione'];
 
     if(empty($text)){
         $text = "Nada foi colocado";
@@ -31,7 +31,6 @@
     echo "Texto que você colocou: ". $textArea. "<br>";
     echo "Número: ". $optChk. "<br>";
     echo "Número: ". $optChk2. "<br>";  
-    echo "Opção Selecionada: ". $optOpt. "<br>"; 
-    echo "Seleção: ". $selCione. "<br>"; 
+    echo "Opção Selecionada: ". $optOpt. "<br>";
 
 ?>
