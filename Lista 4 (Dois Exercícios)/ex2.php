@@ -32,5 +32,4 @@
     echo "Número: ". $optChk. "<br>";
     echo "Número: ". $optChk2. "<br>";  
     echo "Opção Selecionada: ". $optOpt. "<br>";
-
 ?>
