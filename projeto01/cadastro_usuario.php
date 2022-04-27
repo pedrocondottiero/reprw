@@ -9,7 +9,7 @@ echo "<P>Nome do Usuário: " .$nome ."<br>";
 echo "<P>E-mail do Usuário: " .$email ."<br>";
 echo "<P>Telefone do Usuário: " .$telefone ."<br>";
 
-$sql = "INSERT INTO usuario (nome_usuario, email_usuario, telefone_usuario);
+$sql = "INSERT INTO usuario (nome_usuario, email_usuario, telefone_usuario)
         VALUES ('".$nome."','".$email."','".$telefone."')";
 
 $result = mysqli_query($con, $sql);

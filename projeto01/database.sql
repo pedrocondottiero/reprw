@@ -15,3 +15,5 @@ create table usuario (
     telefone_usuario varchar(30) not null,
     primary key(id_usuario)
 );
+
+select * from usuario;
