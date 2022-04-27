@@ -1,3 +1,13 @@
+<?php
+
+include('conexao.php');
+$id_usuario = $_GET['id_usuario'];
+$sql = 'SELECT * FROM usuario where id_usuario = ' .$id_usuario;
+$result = mysqli_query($con, $sql);
+$row = mysqli_fetch_array($result);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,22 +18,25 @@
     <title>Cadastro</title>
 </head>
 <body>
-    <h2>Cadastre-se Aqui</h2>
+    <h2>Alterção de Usuário</h2>
     <hr>
     <form method="post" action="cadastro_usuario.php">
         <div>
             <label for="nome">Nome:</label>
-            <input name="nome" type="text">
+            <input name="nome" type="text"
+            value="<?php echo $row['nome_usuario'] ?>" placeholder="Digite o Nome">
         </div>
         <div>
             <label for="email">E-mail:</label>
-            <input name="email" type="text">
+            <input name="email" type="text"
+            value="<?php echo $row['email_usuario'] ?>" placeholder="Digite o E-mail">
         </div>
         <div>
             <label for="telefone">Telefone:</label>
-            <input name="telefone" type="text">
+            <input name="telefone" type="text"
+            value="<?php echo $row['telefone_usuario'] ?>" placeholder="Digite o Telefone">
         </div>
-        <div>   
+        <div>            
             <button  type="submit">Enviar</button>
         </div>
     </form>    

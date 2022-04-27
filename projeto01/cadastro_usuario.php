@@ -3,6 +3,7 @@
 $nome = $_POST['nome'];
 $email = $_POST['email'];
 $telefone = $_POST['telefone'];
+
 include ('conexao.php');
 
 echo "<P>Nome do Usuário: " .$nome ."<br>";
