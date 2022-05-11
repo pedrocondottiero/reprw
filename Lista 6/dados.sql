@@ -1,7 +1,7 @@
 USE lista6;
 
 INSERT INTO agenda (nome, apelido, endereco, bairro, cidade, estado, telefone, celular, email)
-VALUES ('Pedro Benedito', 'Bene', 'Rua Augustus Magnus', 'Nova Roma', 'Birigui', '18991038480', 'pedrovilelabenedito22@gmail.com');
+VALUES ('Pedro Benedito', 'Bene', 'Rua Augustus Magnus', 'Nova Roma', 'Birigui', 'SP', '18991038480', 'pedrovilelabenedito22@gmail.com');
 
 SELECT * FROM agenda;
 
