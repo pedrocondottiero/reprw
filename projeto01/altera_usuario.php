@@ -20,7 +20,7 @@ $row = mysqli_fetch_array($result);
 <body>
     <h2>Alterção de Usuário</h2>
     <hr>
-    <form method="post" action="cadastro_usuario.php">
+    <form method="post" action="altera_usuario_exe.php">
         <div>
             <label for="nome">Nome:</label>
             <input name="nome" type="text"
@@ -39,7 +39,7 @@ $row = mysqli_fetch_array($result);
         <div>            
             <button  type="submit">Enviar</button>
         </div>
-    </form>    
-</body>
-
-</html>
+        <input name="id_usuario" type="hidden" value="<?php echo $row['id_usuario']?>";>
+        </form>
+        </body>
+        </html>
