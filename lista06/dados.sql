@@ -1,17 +1,19 @@
-USE lista6;
+USE lista06;
 
 INSERT INTO agenda (nome, apelido, endereco, bairro, cidade, estado, telefone, celular, email)
-VALUES ('Pedro Benedito', 'Bene', 'Rua Augustus Magnus', 'Nova Roma', 'Birigui', 'SP', '18991038480', 'pedrovilelabenedito22@gmail.com');
+VALUES ('Pedro Benedito', 'Bene', 'Rua Augustus Magnus', 'Nova Roma', 'Birigui', 'SP', '18991038486', '36348291', 'pedrovilelabenedito22@gmail.com');
+
+create database lista06;
 
 SELECT * FROM agenda;
 
 
 -- Selecionar banco de dados
-use lista6;
+use lista06;
 
 -- Criação da tabela agenda 
 create table agenda (
-	id_usuario int not null auto_increment,
+	id_agenda int not null auto_increment,
     nome varchar(50) not null,
     apelido varchar(40) not null,
     endereco varchar(70) not null,

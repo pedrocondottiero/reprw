@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="cadastro_agenda.css">
+    <title>Cadastrar Agenda</title>
+</head>
+
+<script>
+    function habilitar() {
+        var estado = document.querySelector('#estado').selectedIndex;
+        var cidade = document.querySelector('#cidade');
+        var endereco = document.querySelector('#endereco');
+        var bairro = document.querySelector('#bairro');
+
+        if (estado != 0) {
+            cidade.disabled = false;
+            cidade.value = "";
+            endereco.value = "";
+            bairro.value = "";
+        } else {
+            cidade.disabled = true;
+            endereco.disabled = true;
+            bairro.disabled = true;
+            cidade.value = "";
+            endereco.value = "";
+            bairro.value = "";
+        }
+    }
+
+    function habilitar2() {
+        var cidade = document.querySelector('#cidade').value;
+        var endereco = document.querySelector('#endereco');
+        var bairro = document.querySelector('#bairro');
+
+        if (cidade != "") {
+            endereco.disabled = false;
+            bairro.disabled = false;
+            endereco.value = "";
+            bairro.value = "";
+        } else {
+            endereco.disabled = true;
+            bairro.disabled = true;
+            endereco.value = "";
+            bairro.value = "";
+        }
+    }
+</script>
+
+<body>
+    <form action="cadastro_agenda.php" method="post">
+        <table align="center">
+            <tr>
+                <th colspan="2">Cadastro de usuário</th>
+            </tr>
+            <tr>
+                <td>
+                    <p>Nome:</p>
+                </td>
+                <td><input type="text" name="nome"></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Apelido:</p>
+                </td>
+                <td><input type="text" name="apelido"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Telefone:</p>
+                </td>
+                <td><input type="text" name="telefone"></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Celular:</p>
+                </td>
+                <td><input type="text" name="celular"></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Email:</p>
+                </td>
+                <td><input type="text" name="email"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Estado:</p>
+                </td>
+                <td>
+                    <select name="estado" id="estado" onchange="habilitar()">
+                        <option>Selecionar...</option>
+                        <option>AC</option>
+                        <option>AL</option>
+                        <option>AP</option>
+                        <option>AM</option>
+                        <option>BA</option>
+                        <option>CE</option>
+                        <option>DF</option>
+                        <option>ES</option>
+                        <option>GO</option>
+                        <option>MA</option>
+                        <option>MT</option>
+                        <option>MS</option>
+                        <option>MG</option>
+                        <option>PA</option>
+                        <option>PB</option>
+                        <option>PR</option>
+                        <option>PE</option>
+                        <option>PI</option>
+                        <option>RJ</option>
+                        <option>RN</option>
+                        <option>RS</option>
+                        <option>RO</option>
+                        <option>RR</option>
+                        <option>SC</option>
+                        <option>SP</option>
+                        <option>SE</option>
+                        <option>TO</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Cidade:</p>
+                </td>
+                <td><input type="text" name="cidade" id="cidade" disabled onchange="habilitar2()"></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Endereço:</p>
+                </td>
+                <td><input type="text" name="endereco" id="endereco" disabled></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Bairro:</p>
+                </td>
+                <td><input type="text" name="bairro" id="bairro" disabled></td>
+            </tr>
+            <tr>
+                <td colspan="2"><br><input type="submit" value="Enviar"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
