@@ -37,6 +37,7 @@
                     <td>$row[id_agenda]</td>
                     <td>$data[2]/$data[1]/$data[0]</td>
                     <td><a href='altera_agenda.php?id_agenda=$row[id_agenda]'>$row[nome]</a></td>
+                    <td><img src='data:image/jpeg;base64,".base64_encode( $row["foto_blob"] )."' width='150' height='150'/></td>
                     <td>$row[apelido]</td>
                     <td>$row[telefone]</td>
                     <td>$row[celular]</td>
