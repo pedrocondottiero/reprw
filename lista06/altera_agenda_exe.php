@@ -1,7 +1,7 @@
 <?php
 
     include("conexao.php");
-    
+
     // Upload da foto     
   $fotoNome = $_FILES['foto']['name'];
   $target_dir = "upload/";
@@ -33,21 +33,39 @@
     
     echo "Nome: $nome<br>";
 
+    if(strlen($fotoNome) > 0){
     $sql = "UPDATE agenda SET
-            nome='$nome',
-            apelido='$apelido',
-            telefone='$telefone',
-            celular='$celular',
-            email='$email',
-            estado='$estado',
-            cidade='$cidade',
-            endereco='$endereco',
-            bairro='$bairro',
-            dt_cadastro='$dt_cadastro',
+            nome='".$nome."',
+            apelido='".$apelido."',
+            telefone='".$telefone."',
+            celular='".$celular."',
+            email='".$email."',
+            estado='".$estado."',
+            cidade='".$cidade."',
+            endereco='".$endereco."',
+            bairro='".$bairro."',
+            dt_cadastro='".$dt_cadastro."',
             foto_blob='".$fotoBlob."',
             foto_nome='".$fotoNome."'
             WHERE id_agenda=$id_agenda";
-    
+    }
+    else
+  {
+    $sql = "UPDATE agenda SET
+    nome='".$nome."',
+    apelido='".$apelido."',
+    telefone='".$telefone."',
+    celular='".$celular."',
+    email='".$email."',
+    estado='".$estado."',
+    cidade='".$cidade."',
+    endereco='".$endereco."',
+    bairro='".$bairro."',
+    dt_cadastro='".$dt_cadastro."',
+    foto_blob='".$fotoBlob."',
+    foto_nome='".$fotoNome."'
+    WHERE id_agenda=$id_agenda";
+  }
     $result = mysqli_query($con, $sql);
     if ($result) {
         echo "<br><br>Dados alterados com sucesso!";

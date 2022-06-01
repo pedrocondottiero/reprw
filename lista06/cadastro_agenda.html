@@ -49,7 +49,7 @@
 </script>
 
 <body>
-    <form action="cadastro_agenda.php" method="post">
+    <form action="cadastro_agenda.php" method="post" enctype='multipart/form-data'>
         <table align="center">
             <tr>
                 <th colspan="2">Cadastro de usuário</th>
@@ -100,7 +100,7 @@
                 </td>
                 <td>
                     <select name="estado" id="estado" onchange="habilitar()">
-                        <option>Selecionar...</option>
+                        <option>Selecionar</option>
                         <option>AC</option>
                         <option>AL</option>
                         <option>AP</option>
@@ -155,7 +155,7 @@
                 <tr>
                     <td colspan="2"><br><input type="submit" value="Enviar"></td>
                 </tr>
-                <a href='index.php'> Voltar</a>
+                <a href='index.php'>Voltar</a>
             </div>
         </table>
     </form>

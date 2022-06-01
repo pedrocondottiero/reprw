@@ -14,7 +14,7 @@
     <title>Alterar usuário</title>
 </head>
 <body>
-<form action="altera_agenda_exe.php" method="post">
+<form action="altera_agenda_exe.php" method="post" enctype='multipart/form-data'>
 <?php echo "<img class='center' src='data:image/jpeg;base64,".base64_encode( $row["foto_blob"] )."' align='center' width='150' height='150'/>"; ?>
         <table align="center">
             <tr>
@@ -115,6 +115,9 @@
                 </td>
                 <td><input type="text" name="bairro" id="bairro" value="<?php echo $row['bairro'] ?>"></td>
             </tr>
+            <tr class="form-item">
+                <td><input type="file" id="foto" name="foto" accept="image/*" /></td>
+            <tr class="form-item">
             <tr>
                 <input type="hidden" name="id_agenda" value="<?php echo $row['id_agenda'] ?>">
                 <td colspan="2"><br><input type="submit" class="btnEnviar" value="Enviar"></td>

@@ -9,15 +9,16 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="cadastro_agenda.css">
-    <title>Listar usuário</title>
+    <title>Listar Usuário</title>
 </head>
 <body>
 <table align="center">
         <tr>
-            <th colspan="12" id="titulo">Listagem de usuários</th>
+            <th colspan="12" id="titulo">Listagem de Usuários</th>
         </tr>
         <tr>
             <th>ID</th>
+            <th>Foto</th>
             <th>Data</th>
             <th>Nome</th>
             <th>Apelido</th>
@@ -35,9 +36,9 @@
                 $data = explode("-",$row["dt_cadastro"]);
                 echo "<tr>
                     <td>$row[id_agenda]</td>
+                    <td><img src='data:image/jpeg;base64,".base64_encode( $row["foto_blob"] )."' width='150' height='150'/></td>
                     <td>$data[2]/$data[1]/$data[0]</td>
                     <td><a href='altera_agenda.php?id_agenda=$row[id_agenda]'>$row[nome]</a></td>
-                    <td><img src='data:image/jpeg;base64,".base64_encode( $row["foto_blob"] )."' width='150' height='150'/></td>
                     <td>$row[apelido]</td>
                     <td>$row[telefone]</td>
                     <td>$row[celular]</td>

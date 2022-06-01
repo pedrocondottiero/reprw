@@ -1,70 +1,78 @@
-body {
+#menu_text {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#menu {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#menu ul {
+    list-style: none;
     padding: 0;
+}
+#botao {
+    width: 10vh;
+    margin-top: 1vh;
+    margin-left: 14vh;
+}
+#botao2 {
+    width: 10vh;
+    margin-top: 1vh;
+}
+#osvaldo {
+    padding-bottom: 5vh;
+}
+.center h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    width: 80vh;
+    height: 44vh;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+}
+.container2 {
+    width: 80vh;
+    height: 18vh;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+}
+.p_cadastro {
+    color: green;
+}
+.position {
+    padding-top: 4vh;
+}
+.position p{
+    color: green;
+    position: absolute;
     margin: 0;
+}
+.position input{
+    margin-left: 10vh;
+    width: 30vh;
+}
+.position select{
+    margin-left: 10vh;
+}
+.center2{
     display: block;
-    background-color: rgb(132, 206, 255);
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4vh;
+    width: 150px;
+    height: 150px;
 }
-
-form {
-    width: 100vw;
-    height: 100vh;
-    align-items: center;
+#state_name{
+    position: relative;
     text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.inpTxt {
-    float: left;
-    width: 200px;
-    height: 18px;
-    vertical-align: middle;
-    border: none;
-    border-radius: 5px;
-}
-
-.inpTxt:focus {
-    box-shadow: 0 0 0 0;
-    outline: 0;
-}
-
-.inpTel {
-    width: 160px;
-}
-
-.btnEnviar {
-    width: 100px;
-    height: 30px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    color: white;
-    background-color: rgb(119, 117, 117);
-}
-
-.btnEnviar:hover {
-    background-color: rgb(73, 73, 73);
-}
-
-table {
-    align-items: center;
-    text-align: center;
-    margin: auto;
-    padding: 20px;
-    background-color: rgb(45, 171, 255);
-    border-radius: 10px;
-    box-shadow: black 5px 5px 20px;
-}
-
-table tr td p {
-    margin: 10px;
-}
-
-table tr th {
-    font-size: 1.5em;
-    padding-bottom: 15px;
+    color: green;
+    margin-top: 4vh;
 }
