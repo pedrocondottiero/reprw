@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="cadastro.css">
+    <title>Consulta</title>
+</head>
+
+<body>
+    <form action="consulta_fluxo_caixa.php" method="post" enctype='multipart/form-data'>
+        <table align="center">
+            <tr>
+                <th colspan="2">Consulta</th>
+            </tr>
+                <td>
+                    <select name="tipo" id="tipo">
+                        <option>Saldo Total</option>
+                        <option>Total Saídas</option>
+                        <option>Total Entradas</option>
+                    </select>
+                </td>
+            </tr>
+                <tr>
+                    <td colspan="2"><br><input type="submit" value="Enviar"></td>
+                </tr>
+                <a href='index.php'>Voltar</a>
+            </div>
+        </table>
+    </form>
+</body>
+
+</html>

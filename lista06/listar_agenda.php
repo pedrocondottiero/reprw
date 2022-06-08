@@ -53,3 +53,5 @@
     </table>
 </body>
 </html>
+
+<td><a href='altera_fluxo_caixa.php?id=$row[id]'>$row[nome]</a></td>

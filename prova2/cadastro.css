@@ -1,0 +1,70 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: block;
+    background-color: rgb(132, 206, 255);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form {
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.inpTxt {
+    float: left;
+    width: 200px;
+    height: 18px;
+    vertical-align: middle;
+    border: none;
+    border-radius: 5px;
+}
+
+.inpTxt:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.inpTel {
+    width: 160px;
+}
+
+.btnEnviar {
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    color: white;
+    background-color: rgb(119, 117, 117);
+}
+
+.btnEnviar:hover {
+    background-color: rgb(73, 73, 73);
+}
+
+table {
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(45, 171, 255);
+    border-radius: 10px;
+    box-shadow: black 5px 5px 20px;
+}
+
+table tr td p {
+    margin: 10px;
+}
+
+table tr th {
+    font-size: 1.5em;
+    padding-bottom: 15px;
+}
