@@ -29,7 +29,7 @@
             <th>Data</th>
             <th>Tipo</th>
             <th>Valor</th>
-            <th>Historico</th>
+            <th>Histórico</th>
             <th>Cheque</th>
             <th>Excluir</th>
         </tr>
