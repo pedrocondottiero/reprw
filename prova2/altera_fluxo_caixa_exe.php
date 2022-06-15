@@ -3,7 +3,7 @@
 
     $id = $_POST['id'];
     $data = $_POST['data'];
-    $tipo = $_POST['opt'];
+    $tipo = $_POST['tipo'];
     $valor = $_POST['valor'];
     $historico = $_POST['historico'];
     $cheque = $_POST['cheque'];
@@ -12,7 +12,7 @@
     echo "<p> ID usuário: " . $id . "<p>";
     
     $sql = "UPDATE fluxo_caixa SET
-            data='$data',
+            dt='$data',
             tipo='$tipo',
             valor='$valor',
             historico='$historico',

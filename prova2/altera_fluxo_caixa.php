@@ -24,7 +24,8 @@
         <tr>
                 <th colspan="2">Cadastro</th>
             </tr>
-
+            <tr>
+                    <td><p>Data:</p> <input type="date" name="data" size="50"><br></td>
             <td>
                     <p>Tipo:</p>
                 </td>
