@@ -1,60 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="cadastro.css">
-    <title>Cadastrar</title>
-</head>
+    <head>
+        <title>Formulário</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="cadastro.css">
+    </head>
 
     <body>
-    <form action="cadastro_fluxo_caixa.php" method="post" enctype='multipart/form-data'>
-        <table align="center">
-            
-            <tr>
-                <th colspan="2">Cadastro</th>
-            </tr>
 
-            <td>
-                    <p>Tipo:</p>
-                </td>
-                <td>
-                    <select name="tipo" id="tipo">
-                        <option>Entrada</option>
-                        <option>Saída</option>
-                    </select>
-                </td>
+        <header class="center">
+            <h1>Cadastro</h1>
+            <hr>
+        </header>
 
-            <tr>
-                <td>
-                    <p>Valor:</p>
-                </td>
-                <td><input type="text" name="valor"></td>
-            </tr>
+        <div id="pan" align="center">
+            <a href='index.php' id="espaco">Voltar</a>
+        </div>
 
-            <tr>
-                <td>
-                    <p>Histórico:</p>
-                </td>
-                <td><input type="text" name="historico"></td>
-            </tr>
+        <form method="post" action="cadastro_fluxo_caixa.php">
 
-                <td>
-                    <p>Cheque:</p>
-                </td>
-                <td>
-                    <select name="cheque" id="cheque">
-                        <option>Selecionar</option>
-                        <option>Sim</option>
-                        <option>Não</option>
-                    </select>
-                </td>
-            <tr>
-                <td colspan="2"><br><input type="submit" value="Enviar"></td>
-                </tr>
-                <a href='index.php'>Voltar</a>
+            <div class="container">
+                <div class="container1-1">
+                    <p>Cadastro</p>
+                </div>
+                <table class="position" align="center">
+                    <tr>
+                        <td><p>Data:</p> <input type="date" name="data" size="50"><br></td>
+                    </tr>
+                    <tr>
+                        <td><p>Tipo:</p>  <input type="radio" name="opt" value="Entrada" id="bopt">Entrada
+                                            <input type="radio" name="opt" value="Saida" id="bopt">Saída<br></td>
+                    </tr>
+                    <tr>
+                        <td><p>Valor:</p> <input type="number" name="valor" size="40"><br></td>
+                    </tr>
+                    <tr>
+                        <td><p>Histórico:</p> <input type="text" name="historico" size="150"><br></td>
+                    </tr>
+                    <tr>
+                        <td><p>Cheque:</p> 
+                            <select name="cheque">
+                                <option>Sim</option>
+                                <option>Não</option>
+                            </select><br></td>
+                    </tr>
+                    <tr>
+                        <td><input id="botao" type="submit" value="Enviar"></td>
+                    </tr>
+                </table>
             </div>
-        </table>
-    </form>
-</body>
+        </form>
+    </body>
+
 </html>

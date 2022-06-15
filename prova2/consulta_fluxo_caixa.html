@@ -1,33 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="cadastro.css">
-    <title>Consulta</title>
-</head>
+    <head>
+        <title>Consulta</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="cadastro.css">
+    </head>
 
-<body>
-    <form action="consulta_fluxo_caixa.php" method="post" enctype='multipart/form-data'>
-        <table align="center">
-            <tr>
-                <th colspan="2">Consulta</th>
-            </tr>
-                <td>
-                    <select name="tipo" id="tipo">
-                        <option>Saldo Total</option>
-                        <option>Total Saídas</option>
-                        <option>Total Entradas</option>
-                    </select>
-                </td>
-            </tr>
-                <tr>
-                    <td colspan="2"><br><input type="submit" value="Enviar"></td>
-                </tr>
-                <a href='index.php'>Voltar</a>
+    <body>
+
+        <header class="center">
+            <h1>Consulta</h1>
+            <hr>
+        </header>
+
+        <div id="pan" align="center">
+            <a href='index.php' id="espaco">Voltar</a>
+        </div>
+
+        <form method="post" action="consulta_fluxo_caixa.php">
+
+            <div class="container">
+                <div class="container1-1">
+                    <p>Selecione a Consulta:</p>
+                </div>
+                <table class="position2" align="center">
+                    <tr>
+                        <td><input type="radio" name="tipo" value="entrada"> Saldo total
+                                <input type="radio" name="tipo" value="saida"> Total Saídas
+                                <input type="radio" name="tipo" value="saldo"> Total Entradas<br></td>
+                    </tr>
+                    <tr>
+                        <td><input id="botao" type="submit" value="Enviar"></td>
+                    </tr>
+                </table>
             </div>
-        </table>
-    </form>
-</body>
+        </form>
+    </body>
 
 </html>

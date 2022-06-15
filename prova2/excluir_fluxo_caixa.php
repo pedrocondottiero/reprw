@@ -15,4 +15,4 @@ else
 echo "Erro ao excluir usuário: " .mysqli_error($con)."<br>";
 
 ?>
-<a href='listar_fluxo_caixa.php'> Voltar</a>
+<a href='listar_fluxo_caixa.php'>Voltar</a>

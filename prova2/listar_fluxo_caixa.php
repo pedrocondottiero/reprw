@@ -1,43 +1,54 @@
-<?php
-    include('conexao.php');
-    $sql = "SELECT * FROM fluxo_caixa";
+<?php 
+
+    include ('conexao.php');
+    $sql = 'SELECT * FROM fluxo_caixa';
+
     $result = mysqli_query($con, $sql);
+
+    //$row = mysqli_fetch_array($result);
+
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="cadastro.css">
-    <title>Listar</title>
+    <title>Listagem</title>
+    <link rel="stylesheet" href="cadastro.css">
 </head>
-<body>
-<table align="center">
+<body class="center">
+
+    <h1>Listagem</h1><br>
+    <hr>
+    <table align="center" border="1" width="900">
+        
         <tr>
-            <th colspan="12" id="titulo">Listagem</th>
-        </tr>
-        <tr>
-            <th>ID</th>
+            <th>Código</th>
             <th>Data</th>
             <th>Tipo</th>
             <th>Valor</th>
             <th>Historico</th>
             <th>Cheque</th>
+            <th>Excluir</th>
         </tr>
-        <?php
-            while($row = mysqli_fetch_array($result)) {
-                $data = explode("-",$row["dt"]);
-                echo "<tr>
-                    <td>$row[id]</td>
-                    <td>$data[2]/$data[1]/$data[0]</td>
-                    <td><a href='altera_fluxo_caixa.php?id=$row[id]'>$row[tipo]</a></td>
-                    <td>$row[tipo]</td>
-                    <td>$row[valor]</td>
-                    <td>$row[historico]</td>
-                    <td>$row[cheque]</td>
-                    <td><a href='excluir_fluxo_caixa.php?id=$row[id]'>Excluir</a>";
+
+        <?php 
+            while ($row = mysqli_fetch_array($result)) {
+                echo "<tr>";
+                $dt = explode("-",$row['dt']);
+                echo "<td>" .$row['id']. "</td>";
+                echo "<td>" .$dt[2]."/".$dt[1]."/".$dt[0]."</td>";
+                echo "<td>" .$row['tipo']. "</td>";
+                echo "<td>" .$row['valor']. "</td>";
+                echo "<td><a href='altera_fluxo_caixa.php?id=".$row['id']."'>" .$row['historico']. "</a></td>";
+                echo "<td>" .$row['cheque']. "</td>";
+                echo "<td><a href='excluir_fluxo_caixa.php?id=".$row['id']."'>Excluir</a></td>";
+                echo "</tr>";
             }
         ?>
+
     </table>
+    <div align="center">
+            <a href='index.php'>Voltar</a>
+    </div>
 </body>
 </html>

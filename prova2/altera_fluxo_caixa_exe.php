@@ -2,13 +2,13 @@
 
 include("conexao.php");
 $id = $_POST["id"];
-$dt = date("Y-m-d");
+$data = date("Y-m-d");
 $tipo = $_POST['tipo'];
 $valor = $_POST['valor'];
 $historico = $_POST['historico'];
 $cheque = $_POST['cheque'];
 
-echo "<h1> Alteração de dados </h1>";
+echo "<h1> Alteração de Dados </h1>";
     echo "<p> Tipo: " . $tipo . "<p>";
 
 	$sql = "UPDATE fluxo_caixa SET
