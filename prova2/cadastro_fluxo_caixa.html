@@ -1,56 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <head>
-        <title>Formulário</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="cadastro.css">
-    </head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <body>
+    <title>Cadastro</title>
+  </head>
+  <head>
+    <title>Formulário</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
 
-        <header class="center">
-            <h1>Cadastro</h1>
-            <hr>
-        </header>
+<body>
 
-        <div id="pan" align="center">
-            <a href='index.php' id="espaco">Voltar</a>
-        </div>
+    <header class="center">
+        <h1>Cadastro</h1>
+        <hr>
+    </header>
 
-        <form method="post" action="cadastro_fluxo_caixa.php">
+    <div id="pan" align="center">
+        <a href='index.php' id="espaco">Voltar</a>
+        
+    </div>
 
-            <div class="container">
-                <div class="container1-1">
-                    <p>Cadastro</p>
-                </div>
-                <table class="position" align="center">
-                    <tr>
-                        <td><p>Data:</p> <input type="date" name="data" size="50"><br></td>
-                    </tr>
-                    <tr>
-                        <td><p>Tipo:</p>  <input type="radio" name="opt" value="Entrada" id="bopt">Entrada
-                                            <input type="radio" name="opt" value="Saida" id="bopt">Saída<br></td>
-                    </tr>
-                    <tr>
-                        <td><p>Valor:</p> <input type="number" name="valor" size="40"><br></td>
-                    </tr>
-                    <tr>
-                        <td><p>Histórico:</p> <input type="text" name="historico" size="150"><br></td>
-                    </tr>
-                    <tr>
-                        <td><p>Cheque:</p> 
-                            <select name="cheque">
-                                <option>Sim</option>
-                                <option>Não</option>
-                            </select><br></td>
-                    </tr>
-                    <tr>
-                        <td><input id="botao" type="submit" value="Enviar"></td>
-                    </tr>
-                </table>
+    <form method="post" action="cadastro_fluxo_caixa.php">
+
+        <div class="container">
+            <div class="container1-1">
+                <p>Cadastro</p>
             </div>
-        </form>
-    </body>
+            <table class="position" align="center">
+                <tr>
+                    <td><p>Data:</p> <input type="date" name="data" size="50"><br></td>
+                </tr>
+                <tr>
+                    <td><p>Tipo:</p>  <input type="radio" name="opt" value="Entrada" id="bopt">Entrada
+                                        <input type="radio" name="opt" value="Saida" id="bopt">Saída<br></td>
+                </tr>
+                <tr>
+                    <td><p>Valor:</p> <input type="number" name="valor" size="40"><br></td>
+                </tr>
+                <tr>
+                    <td><p>Histórico:</p> <input type="text" name="historico" size="150"><br></td>
+                </tr>
+                <tr>
+                    <td><p>Cheque:</p> 
+                        <select name="cheque">
+                            <option>Sim</option>
+                            <option>Não</option>
+                        </select><br></td>
+                </tr>
+                <tr>
+                    <td><input id="botao" type="submit" value="Enviar"></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+  <body>
+    <h1>Bem-Vindo! :D</h1>
 
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
 </html>
